@@ -13,5 +13,13 @@ public class ExpressionEvaluatorTest {
         //THEN
         assertThat(actualResult).isEqualTo(expectedResult);
     }
-
+    @Test
+    public void return_8_pour_3_5() {
+        //GIVEN
+        int expectedResult =8;
+        //WHEN
+        int actualResult = ExpressionEvaluator.evaluate("3,5");
+        //THEN
+        assertThat(actualResult).isEqualTo(expectedResult);
+    }
 }
