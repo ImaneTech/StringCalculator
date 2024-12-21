@@ -40,5 +40,14 @@ public class ExpressionEvaluatorTest {
         //THEN
         assertThat(actualResult).isEqualTo(expectedResult);
     }
+    @Test
+    public void return_20_pour_20() {
+        //GIVEN
+        int expectedResult =20;
+        //WHEN
+        int actualResult = ExpressionEvaluator.evaluate("20");
+        //THEN
+        assertThat(actualResult).isEqualTo(expectedResult);
+    }
 
 }
