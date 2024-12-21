@@ -31,4 +31,14 @@ public class ExpressionEvaluatorTest {
         //THEN
         assertThat(actualResult).isEqualTo(expectedResult);
     }
+    @Test
+    public void return_21_pour_5_5_4_7() {
+        //GIVEN
+        int expectedResult =21;
+        //WHEN
+        int actualResult = ExpressionEvaluator.evaluate("5,5,4,7");
+        //THEN
+        assertThat(actualResult).isEqualTo(expectedResult);
+    }
+
 }
