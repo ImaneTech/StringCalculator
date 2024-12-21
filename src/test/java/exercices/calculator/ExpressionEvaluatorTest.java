@@ -22,4 +22,13 @@ public class ExpressionEvaluatorTest {
         //THEN
         assertThat(actualResult).isEqualTo(expectedResult);
     }
+    @Test
+    public void return_22_pour_10_6_6() {
+        //GIVEN
+        int expectedResult =22;
+        //WHEN
+        int actualResult = ExpressionEvaluator.evaluate("10,6,6");
+        //THEN
+        assertThat(actualResult).isEqualTo(expectedResult);
+    }
 }
